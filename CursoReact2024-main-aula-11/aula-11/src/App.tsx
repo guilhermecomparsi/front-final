@@ -10,7 +10,6 @@ function App() {
       <CssBaseline />
       <ThemeProvider>
         <div style={{ padding: '20px' }}>
-          {/* Botão para alternar entre temas */}
           <Button
             variant="contained"
             color="primary"
@@ -18,13 +17,11 @@ function App() {
               const currentTheme = localStorage.getItem('theme');
               const newTheme = currentTheme === 'light' ? 'dark' : 'light';
               localStorage.setItem('theme', newTheme);
-              window.location.reload(); // Recarregar a página para aplicar o novo tema
+              window.location.reload(); 
             }}
           >
             Alternar Tema
           </Button>
-
-          {/* Exibe a lista de Pokémons filtrada */}
           <RouterProvider />
         </div>
       </ThemeProvider>

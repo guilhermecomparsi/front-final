@@ -29,8 +29,6 @@ export function HomePage() {
         <>
             <ScrollRestoration />
             <Header title="PokeDex" />
-
-            {/* Filtro de Tipos */}
             <Box sx={{ marginBottom: "1rem" }}>
                 <Button
                     component={Link}
@@ -128,7 +126,6 @@ export function HomePage() {
                 >
                     Tipo Normal
                 </Button>
-                {/* Adicione mais tipos conforme necessário */}
             </Box>
 
             <Container maxWidth="lg" sx={{ padding: "1.5rem" }}>
